@@ -1,5 +1,66 @@
-.env
- __pycache__
- __pycache__/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
 
- .gitignore
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Static and media files
+/staticfiles/
+/media/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# JetBrains IDEs
+.idea/
+
+# Migrations (optional if you recreate migrations often)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Pip
+pip-log.txt
+
+# Tests
+*.cover
+*.pytest_cache/
+.tox/
+
+# MyPy
+.mypy_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Git
+.gitignore
