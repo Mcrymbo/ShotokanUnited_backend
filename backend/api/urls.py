@@ -7,6 +7,7 @@ from news.urls import news_router
 from news.views import LikeNewsView, CommentsNewsView
 from django.urls import path, include
 from clubs.views import GenerateRegistrationLinkAPIView, RegisterAPIView
+from app.views import chat_with_deepseek
 
 router = DefaultRouter()
 router.registry.extend(event_router.registry)
@@ -23,4 +24,5 @@ urlpatterns = [
     path('news/<uuid:pk>/comment/', CommentsNewsView.as_view(), name='comment'),
     path('generate-token/', GenerateRegistrationLinkAPIView.as_view(), name='generate-token'),
     path('register/<uuid:token>/', RegisterAPIView.as_view(), name='register'),
+    path('chat/', chat_with_deepseek, name='chat_with_deepseek'),
 ]
