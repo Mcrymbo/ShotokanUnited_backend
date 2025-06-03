@@ -20,6 +20,7 @@ DEBUG = env.bool('DEBUG', default=True)
 ALLOWED_HOSTS = [
     'shotokanunitedkenya.org',
     'www.shotokanunitedkenya.org',
+    'api.shotokanunitedkenya.org',
     'localhost',
     '127.0.0.1',
 ]
