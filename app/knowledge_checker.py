@@ -1,6 +1,6 @@
 from .knowledge_base.karate_knowledge import TECHNIQUES, KATA, ORGANIZATION_INFO
 
-def check_knowledge_base(query: str) -> str or None:
+def check_knowledge_base(query: str) -> str | None:
     query = query.lower()
     
     # Technique lookup
